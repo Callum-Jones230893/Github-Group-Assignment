@@ -2,19 +2,43 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #EDEDE9;
-    margin: 0px;
+html {
     height: 100vh;
 }
 
+body {
+    background-color: #EDEDE9;
+    margin: 0px;
+    height: 100%;
+}
+
 .header_title {
-    color: black;
+    color: #bbb0a4;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.b-info {
+    color: black;
+    margin: 50px;
+    padding: 24px;
     text-align: center;
 }
 
-.part1 {
-    
-    padding: 24px;
+.text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
+
+/*--------------------*/
+    /*MEDIA QUERIES*/
+/*--------------------*/
+
