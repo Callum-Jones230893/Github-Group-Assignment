@@ -1,6 +1,6 @@
 :root {
   --text-color: #1a1c20;
-  --link-color: #817169;
+  --link-color: #d5bdaf;
   --background-color: #edede9;
   --card-bg: #ffffff;
   --card-radius: 18px;
@@ -44,7 +44,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #EDEDE9(238, 239, 241, 0.85);
+  background: rgba(238, 239, 241, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
