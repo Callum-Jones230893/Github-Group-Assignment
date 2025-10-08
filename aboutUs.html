@@ -16,29 +16,43 @@
   </head>
   <body>
     <!-- NAVBAR -->
+    <nav class="menu">
+      <input type="checkbox" id="menu-button" class="menu-checkbox" />
+      <label for="menu-button" class="menu-button">
+        <img src="src/menu__icon.png" alt="Menu" class="menu-icon" />
+      </label>
+      <div class="menu-items">
+        <div class="menu-item"><a href="index.html">Home</a></div>
+        <div class="menu-item"><a href="aboutUs.html">About us</a></div>
+        <div class="menu-item"><a href="branching.html">Branching</a></div>
+        <div class="menu-item"><a href="changes.html">Changes</a></div>
+        <div class="menu-item"><a href="project.html">Project</a></div>
+      </div>
+    </nav>
     <nav aria-label="Primary">
       <div class="left">
         <a href="index.html">Team 1</a>
       </div>
+      <div class="full-screen-menu">
+        <ul class="right">
+          <li><a href="index.html" aria-current="page">Home</a></li>
 
-      <ul class="right">
-        <li><a href="index.html" aria-current="page">Home</a></li>
+          <!-- About Us -->
+          <li><a href="aboutUs.html">About Us</a></li>
 
-        <!-- About Us -->
-        <li><a href="about.html">About Us</a></li>
-
-        <!-- Dropdown Projects -->
-        <li class="dropdown">
-          <a href="#" class="submenu-trigger" aria-haspopup="true">
-            Projects <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <ul class="submenu" aria-label="Projects submenu">
-            <li><a href="project.html">Project</a></li>
-            <li><a href="branching.html">Branch</a></li>
-            <li><a href="change.html">Change</a></li>
-          </ul>
-        </li>
-      </ul>
+          <!-- Dropdown Projects -->
+          <li class="dropdown">
+            <a href="#" class="submenu-trigger" aria-haspopup="true">
+              Projects <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+            </a>
+            <ul class="submenu" aria-label="Projects submenu">
+              <li><a href="project.html">Project</a></li>
+              <li><a href="branching.html">Branch</a></li>
+              <li><a href="change.html">Change</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- MAIN CONTENT -->
