@@ -187,6 +187,7 @@ nav .right a {
   font-size: 14px;
 }
 
+/* -----MEDIA QUERIES-----------*/
 @media (max-width:768px){
   
     .menu {
