@@ -1,6 +1,6 @@
 :root {
   --text-color: #1a1c20;
-  --link-color: #d5bdaf;
+  --link-color: #817169;
   --background-color: #edede9;
   --card-bg: #ffffff;
   --card-radius: 18px;
@@ -40,7 +40,7 @@ a {
 
 /* ---------- Navbar ---------- */
 .menu {
-    display: none;
+  display: none;
 }
 
 nav {
@@ -88,7 +88,7 @@ nav .right a {
   top: 100%;
   left: 0;
   min-width: 180px;
-  background: #fff;
+  background: #2a3340;
   border: 1px solid #d3d3d3;
   border-radius: 8px;
   padding: 8px 0;
@@ -186,70 +186,98 @@ nav .right a {
 .footer p {
   font-size: 14px;
 }
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 24px;
+  }
+
+  .page__title {
+    font-size: 36px;
+  }
+
+  .about-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    text-align: center;
+  }
+}
 
 /* -----MEDIA QUERIES-----------*/
-@media (max-width:768px){
-  
-    .menu {
-        background-color: transparent;
-        display: flex;
-        height: 10px;
-        padding: 15px;
-        padding-top: 20px;
-        right: 0px;
-        position: absolute;
-        z-index: 1000;
-    }
+@media (max-width: 768px) {
+  .menu {
+    background-color: transparent;
+    display: flex;
+    height: 10px;
+    padding: 15px;
+    padding-top: 20px;
+    right: 0px;
+    position: absolute;
+    z-index: 1000;
+  }
 
-    .menu img {
-      display: block;
-      height: 15px;
-      width: 15px;
-    }
+  .menu img {
+    display: block;
+    height: 15px;
+    width: 15px;
+  }
 
-    .menu-checkbox {
-        display: none;
-    }
+  .menu-checkbox {
+    display: none;
+  }
 
-    .menu-button {
-        display: block;
-        height: 25px;
-        width: 25px;    
-    }
-    
-    .menu-items {
-        background-color: transparent;
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        right: 0;
-        min-width: 160px;
-        top: 100%;
-        text-align: right;
-    }
+  .menu-button {
+    display: block;
+    height: 25px;
+    width: 25px;
+  }
 
-    .menu-item  a {
-        color: darkblue;
-        display: block;
-        padding: 8px 16px;
-        text-decoration: none;
-        cursor: pointer;
-    }
+  .menu-items {
+    background-color: transparent;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    top: 100%;
+    text-align: right;
+  }
 
-    .menu-checkbox:checked ~ .menu-items {
-        display: flex;
-    }
-    
-    nav {
-      border-bottom: none;
-      z-index: 1;
-    }
+  .menu-item a {
+    color: darkblue;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-    .full-screen-menu {
-      display: none;
-    }
+  .menu-checkbox:checked ~ .menu-items {
+    display: flex;
+  }
 
-    .about-title {
-      font-size: 36px;  
-    }
-} 
+  nav {
+    border-bottom: none;
+    z-index: 1;
+  }
+
+  .full-screen-menu {
+    display: none;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+
+  nav[aria-label="Primary"] .right {
+    display: none;
+  }
+}
