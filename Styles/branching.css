@@ -1,14 +1,6 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    height: 100vh;
-}
 
 body {
     background-color: #EDEDE9;
-    height: 100%;
 }
 
 .main {

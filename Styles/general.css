@@ -55,7 +55,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  height: 80px;
+  height: 50px;
 }
 
 nav .left a {
@@ -108,11 +108,6 @@ nav .right a {
 
 .submenu a:hover {
   background: #f4f5f7;
-}
-
-.submenu.align-right {
-  left: auto;
-  right: 0;
 }
 
 .dropdown:hover .submenu,
@@ -210,10 +205,7 @@ nav .right a {
     font-size: 16px;
     text-align: center;
   }
-}
 
-/* -----MEDIA QUERIES-----------*/
-@media (max-width: 768px) {
   .menu {
     background-color: transparent;
     display: flex;
