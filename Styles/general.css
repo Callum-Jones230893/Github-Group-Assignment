@@ -1,6 +1,6 @@
 :root {
   --text-color: #1a1c20;
-  --link-color: white;
+  --link-color: rgb(222, 213, 213);
   --background-color: #edede9;
   --card-bg: #ffffff;
   --card-radius: 18px;
@@ -8,8 +8,8 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   max-width: var(--container-max);
-  margin: 0 auto;
+  margin: 0px;
   display: flex;
   flex-direction: column;
 }
@@ -50,7 +50,6 @@ nav {
   background: #2a3340;
   color: white;
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   display: flex;
   justify-content: space-between;
