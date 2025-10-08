@@ -121,13 +121,13 @@ nav .right a {
   margin-left: 6px;
 }
 
-/* ---------- ABOUT SECTION ---------- */
+/* ---------- About Section ---------- */
 .about-section {
   padding: 0 50px;
   margin: 40px 0 90px;
 }
 
-.about-title {
+.page__title {
   text-align: center;
   font-size: 56px;
   letter-spacing: 2px;
@@ -204,7 +204,7 @@ nav .right a {
     padding: 0 24px;
   }
 
-  .about-title {
+  .page__title {
     font-size: 36px;
   }
 
