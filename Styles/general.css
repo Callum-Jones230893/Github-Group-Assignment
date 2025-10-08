@@ -47,7 +47,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(238, 239, 241, 0.85);
+  background: #2a3340;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
