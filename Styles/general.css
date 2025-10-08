@@ -1,6 +1,6 @@
 :root {
   --text-color: #1a1c20;
-  --link-color: #817169;
+  --link-color: #white;
   --background-color: #edede9;
   --card-bg: #ffffff;
   --card-radius: 18px;
@@ -48,6 +48,7 @@ nav {
   top: 0;
   z-index: 1000;
   background: #2a3340;
+  color: white;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -89,7 +90,6 @@ nav .right a {
   left: 0;
   min-width: 180px;
   background: #2a3340;
-  border: 1px solid #d3d3d3;
   border-radius: 8px;
   padding: 8px 0;
   display: none;
@@ -97,17 +97,22 @@ nav .right a {
   z-index: 20;
 }
 
+.submenu li {
+  list-style: none;
+}
+
 .submenu a {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
-  color: var(--text-color);
+  color: white;
   white-space: nowrap;
 }
 
 .submenu a:hover {
-  background: #f4f5f7;
+  background: #3f516b;
+  border-radius: 14px;
 }
 
 .submenu.align-right {
