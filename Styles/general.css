@@ -121,7 +121,7 @@ nav .right a {
 
 /* ---------- About Section ---------- */
 .main-wrapper {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .about-section {
@@ -184,7 +184,7 @@ nav .right a {
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
   nav {
-    padding: 0 24px;
+    padding: 0 50px;
   }
 
   .page-title {
