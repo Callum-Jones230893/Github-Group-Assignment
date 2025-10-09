@@ -119,6 +119,11 @@ nav .right a {
   margin-left: 6px;
 }
 
+.submenu li {
+    list-style: none;
+    text-align: center;
+}
+
 /* ---------- About Section ---------- */
 .main-wrapper {
   flex: 1;
