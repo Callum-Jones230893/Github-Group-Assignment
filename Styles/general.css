@@ -27,7 +27,6 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
-  max-width: var(--container-max);
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -54,7 +53,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 20px;
   height: 50px;
 }
 
@@ -201,8 +200,10 @@ nav .right a {
   }
 
   .about-card {
-    flex-direction: column;
-    align-items: center;
+    align-items: center;   
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
   }
 
   .avatar img {
@@ -253,8 +254,9 @@ nav .right a {
     text-align: right;
   }
 
+    
   .menu-item a {
-    color: darkblue;
+    color: black;
     display: block;
     padding: 8px 16px;
     text-decoration: none;
@@ -267,6 +269,7 @@ nav .right a {
 
   nav {
     border-bottom: none;
+    padding: 16px;
     z-index: 1;
   }
 
