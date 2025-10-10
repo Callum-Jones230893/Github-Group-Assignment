@@ -30,7 +30,7 @@
         <li><a href="index.html" aria-current="page">Home</a></li>
 
         <!-- About Us -->
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
 
         <!-- Dropdown Projects -->
         <li class="dropdown">
@@ -47,19 +47,39 @@
     </nav>    
   <main class="main-wrapper">
     <section id="about" class="about-section">
-      <h1 class="page__title">Making changes via Github</h1>
+      <h1 class="about-title">About the project</h1>
       <article class="about-card" aria-label="About GitHub">
         <figure class="avatar">
           <img src="src/git.png" alt="GitHub logo" />
         </figure>
         <div class="about-text">
           <h2>Why do we make a repository?</h2>
-          <p>A gire repository, also known as "repo" is a place where you can store your projects and all of your code/files, along with the entire history of the project progress.</p>
+          <p>A github repository, also known as "repo" is a place where you can store your projects and all of your code/files, along with the entire history of the project progress.</p>
           <p>Having these things all in one place where both you and your team can access it, revert changes, and view changes can help alot especially for live environments in order to prevent
             conflicts and crashes. 
           </p>
           <br>
           <h3>Steps to make a repository</h3>
+          <li class="new-repo-steps">
+            <ul><strong>Step one</strong>: Sign in/sign up to <a href="https://github.com/">Github</a>.</ul>
+            <ul><strong>Step two</strong>: Click the "+" icon on the top right and select "New Repository".</ul>
+            <ul><strong>Step three</strong>: Fill in the required details e.g name, description and visibility</ul>
+            <ul><strong>Step four</strong>: Clone the Repository to your computer, by opening the terminal and typing <strong>"git clone https://github.com/your-username/your-repo-name.git</strong></ul>
+            <ul><strong>Step five</strong>: Move into your repo folder using <strong>"cd your-repo-name"</strong>.</ul>
+            <ul><strong>Step six</strong>: Add the documents you wish to add using <strong>"touch file-name"</strong>.</ul>
+            <ul><strong>Step seven</strong>: Commit and Push changes made to update your repo.</ul>
+          </li>
+          <li class="new-repo-steps">
+            <ul><strong>If you wish to work together on a private project, and contribute as a team, you have to make the person who is wanting to work on it a "collaborator"</strong></ul>
+          </li>
+          <li class="new-repo-steps">
+            <ul><strong>If you wish to contribute to a public project you have to use a "fork"</strong></ul>
+            <ul><strong>Step one</strong>: Open the repository page.</ul>
+            <ul><strong>Step two</strong>: Click the "fork" button that is located at the top right. Github will then create a repository in your account.</ul>
+            <ul><strong>Step three</strong>: In your VScode terminal, use the <strong>"git clone"</strong> command with the link to that repository.</ul>
+            <ul><strong>Step four</strong>: Change your directory to the newly cloned repository.</ul>  
+            <ul><strong>Step five</strong>: Set the original repository that you cloned from as the "upstream" using the command <strong>"git remote add upstream"</strong> command with the link to the <strong>original</strong> repository.</ul>
+          </li>
         </div>
     </section>    
   </main>

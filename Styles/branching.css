@@ -1,14 +1,6 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    height: 100vh;
-}
 
 body {
     background-color: #EDEDE9;
-    height: 100%;
 }
 
 .b-text {  /*txt bubble*/
@@ -48,8 +40,12 @@ li {
     /*MEDIA QUERIES*/
 /*--------------------*/
 @media only screen and (max-width: 600px)  {
-    .picture {
-        width: 100px;
-        height: 100px;
-    }
+  .picture img {
+    width: 320px;  
+    height: 320px;
+  }
+
+  .about-text {
+    margin-top: 20px;
+  }
 }
