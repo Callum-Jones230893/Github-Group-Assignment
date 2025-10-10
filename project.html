@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <link rel="stylesheet" href="./Styles/general.css">
-    <link rel="stylesheet" href="./Styles/project.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="./Styles/general.css">
+  <link rel="stylesheet" href="./Styles/project.css">
 </head>
 <body>
-    
+    <nav class="menu">
+      <input type="checkbox" id="menu-button" class="menu-checkbox">
+      <label for="menu-button" class="menu-button">
+       <img src="src/menu__icon.png" alt="Menu" class="menu-icon">
+      </label>
+      <div class="menu-items">
+        <div class="menu-item"><a href="index.html">Home</a></div>
+        <div class="menu-item"><a href="aboutUs.html">About us</a></div>
+        <div class="menu-item"><a href="branching.html">Branching</a></div>
+        <div class="menu-item"><a href="change.html">Changes</a></div>
+        <div class="menu-item"><a href="project.html">Project</a></div>        
+     </div>
+    </nav>  
+    <nav aria-label="Primary">
+      <div class="left">
+        <a href="index.html">Team 1</a>
+      </div>
+
+      <ul class="right">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+
+        <!-- About Us -->
+        <li><a href="aboutUs.html">About Us</a></li>
+
+        <!-- Dropdown Projects -->
+        <li class="dropdown">
+          <a href="#" class="submenu-trigger" aria-haspopup="true">
+            Projects <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <ul class="submenu" aria-label="Projects submenu">
+            <li><a href="project.html">Project</a></li>
+            <li><a href="branching.html">Branch</a></li>
+            <li><a href="change.html">Change</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>    
+  <main class="main-wrapper">
+    <section id="about" class="about-section">
+      <h1 class="about-title">About the project</h1>
+      <article class="about-card" aria-label="About GitHub">
+        <figure class="avatar">
+          <img src="src/git.png" alt="GitHub logo" />
+        </figure>
+        <div class="about-text">
+          <h2>Why do we make a repository?</h2>
+          <p>A github repository, also known as "repo" is a place where you can store your projects and all of your code/files, along with the entire history of the project progress.</p>
+          <p>Having these things all in one place where both you and your team can access it, revert changes, and view changes can help alot especially for live environments in order to prevent
+            conflicts and crashes. 
+          </p>
+          <br>
+          <h3>Steps to make a repository</h3>
+          <li class="new-repo-steps">
+            <ul><strong>Step one</strong>: Sign in/sign up to <a href="https://github.com/">Github</a>.</ul>
+            <ul><strong>Step two</strong>: Click the "+" icon on the top right and select "New Repository".</ul>
+            <ul><strong>Step three</strong>: Fill in the required details e.g name, description and visibility</ul>
+            <ul><strong>Step four</strong>: Clone the Repository to your computer, by opening the terminal and typing <strong>"git clone https://github.com/your-username/your-repo-name.git</strong></ul>
+            <ul><strong>Step five</strong>: Move into your repo folder using <strong>"cd your-repo-name"</strong>.</ul>
+            <ul><strong>Step six</strong>: Add the documents you wish to add using <strong>"touch file-name"</strong>.</ul>
+            <ul><strong>Step seven</strong>: Commit and Push changes made to update your repo.</ul>
+          </li>
+          <li class="new-repo-steps">
+            <ul><strong>If you wish to work together on a private project, and contribute as a team, you have to make the person who is wanting to work on it a "collaborator"</strong></ul>
+          </li>
+          <li class="new-repo-steps">
+            <ul><strong>If you wish to contribute to a public project you have to use a "fork"</strong></ul>
+            <ul><strong>Step one</strong>: Open the repository page.</ul>
+            <ul><strong>Step two</strong>: Click the "fork" button that is located at the top right. Github will then create a repository in your account.</ul>
+            <ul><strong>Step three</strong>: In your VScode terminal, use the <strong>"git clone"</strong> command with the link to that repository.</ul>
+            <ul><strong>Step four</strong>: Change your directory to the newly cloned repository.</ul>  
+            <ul><strong>Step five</strong>: Set the original repository that you cloned from as the "upstream" using the command <strong>"git remote add upstream"</strong> command with the link to the <strong>original</strong> repository.</ul>
+          </li>
+        </div>
+    </section>    
+  </main>
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>&copy; <span id="year">2025</span> Team 1. All rights reserved.</p>
+      </div>
+    </footer>
 </body>
 </html>
