@@ -50,6 +50,7 @@ nav {
   background: #2a3340;
   color: white;
   backdrop-filter: blur(8px);
+
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   display: flex;
   justify-content: space-between;
