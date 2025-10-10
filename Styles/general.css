@@ -1,6 +1,6 @@
 :root {
   --text-color: #1a1c20;
-  --link-color: #817169;
+  --link-color: rgb(222, 213, 213);
   --background-color: #edede9;
   --card-bg: #ffffff;
   --card-radius: 18px;
@@ -8,8 +8,8 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   max-width: var(--container-max);
-  margin: 0 auto;
+  margin: 0px;
   display: flex;
   flex-direction: column;
 }
@@ -47,9 +47,9 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(238, 239, 241, 0.85);
+  background: #2a3340;
+  color: white;
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   display: flex;
   justify-content: space-between;
@@ -88,8 +88,7 @@ nav .right a {
   top: 100%;
   left: 0;
   min-width: 180px;
-  background: #fff;
-  border: 1px solid #d3d3d3;
+  background: #2a3340;
   border-radius: 8px;
   padding: 8px 0;
   display: none;
@@ -97,17 +96,22 @@ nav .right a {
   z-index: 20;
 }
 
+.submenu li {
+  list-style: none;
+}
+
 .submenu a {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
-  color: var(--text-color);
+  color: white;
   white-space: nowrap;
 }
 
 .submenu a:hover {
-  background: #f4f5f7;
+  background: #3f516b;
+  border-radius: 14px;
 }
 
 .dropdown:hover .submenu,

@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="./Styles/branching.css">
 </head>
     <body>
+    <nav class="menu">
+    <input type="checkbox" id="menu-button" class="menu-checkbox">
+    <label for="menu-button" class="menu-button">
+    <img src="src/menu__icon.png" alt="Menu" class="menu-icon">
+    </label>
+    <div class="menu-items">
+        <div class="menu-item"><a href="index.html">Home</a></div>
+        <div class="menu-item"><a href="aboutUs.html">About us</a></div>
+        <div class="menu-item"><a href="branching.html">Branching</a></div>
+        <div class="menu-item"><a href="change.html">Changes</a></div>
+        <div class="menu-item"><a href="project.html">Project</a></div>
+    </div> 
+    </nav>
         <nav aria-label="Primary">
         <div class="left">
             <a href="index.html">Team 1</a>
@@ -25,9 +38,9 @@
                 Projects <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
             </a>
             <ul class="submenu" aria-label="Projects submenu">
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Branch</a></li>
-                <li><a href="#">Change</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="branching.html">Branch</a></li>
+                <li><a href="change.html">Change</a></li>
             </ul>
             </li>
         </ul>
@@ -36,33 +49,33 @@
             <section id="about" class="about-section">
                 <h1 class="about-title">ABOUT BRANCHES</h1>
 
-                 <article class="about-card" aria-label="About GitHub">
+                    <article class="about-card" aria-label="About GitHub">
                     <figure class="picture">
                         <img src="src/branch.png" alt="GitHub logo" />
                     </figure>
 
-                 <div class="about-text">
-                     <p class="b-text">Using Git and branching greatly improves teamwork
-                         in coding projects by allowing multiple developers to work in parallel
-                         without interfering with each other’s changes. Branches provide isolated environments 
-                         where features, fixes, or experiments can be developed independently. This prevents conflicts 
-                         with the main codebase and makes integration smoother through pull requests and code reviews. 
-                         Teams can maintain a stable main branch while testing and refining work in separate branches. 
-                         Git also tracks history, enabling easy rollback if needed. Overall, branching encourages collaboration, 
-                         improves code quality, and ensures organized, efficient workflows in team-based software development.
+                    <div class="about-text">
+                        <p class="b-text">Using Git and branching greatly improves teamwork
+                        in coding projects by allowing multiple developers to work in parallel
+                        without interfering with each other’s changes. Branches provide isolated environments 
+                        where features, fixes, or experiments can be developed independently. This prevents conflicts 
+                        with the main codebase and makes integration smoother through pull requests and code reviews. 
+                        Teams can maintain a stable main branch while testing and refining work in separate branches. 
+                        Git also tracks history, enabling easy rollback if needed. Overall, branching encourages collaboration, 
+                        improves code quality, and ensures organized, efficient workflows in team-based software development.
                     </p>    
                     <p class="commands">
                         This is the commands we used;
                         <li>git commit -m ""</li>
                         <li>git switch branch name</li>
                     </p>
-                 </div>
-             </article>
+                </div>
+            </article>
         </main>
     <footer class="footer">
         <div class="footer-inner">
-         <p>&copy; <span id="year">2025</span> Team 1. All rights reserved.</p>
-      </div>
+        <p>&copy; <span id="year">2025</span> Team 1. All rights reserved.</p>
+    </div>
     </footer>
     </body> 
 </html>
