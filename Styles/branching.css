@@ -5,9 +5,7 @@ body {
 
 .b-text {  /*txt bubble*/
     color: black;
-    margin: 50px;
-    padding: 24px;
-    text-align: center;
+    margin: 0px;
 }
 
 .text {
@@ -40,12 +38,13 @@ li {
     /*MEDIA QUERIES*/
 /*--------------------*/
 @media only screen and (max-width: 600px)  {
+  
   .picture img {
-    width: 320px;  
-    height: 320px;
+    width: 200px;  
+    height: 200px;
   }
 
   .about-text {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
